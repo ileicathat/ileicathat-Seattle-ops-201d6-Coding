@@ -12,7 +12,7 @@ echo Hello what is your username?
 read -p "Enter your username please: " name
 
 echo "Hello, $name"
-sleep 5
+sleep 2
 echo "You have been busy I see:"
-sleep 5
+sleep 2
 last 
