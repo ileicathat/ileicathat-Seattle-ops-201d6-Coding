@@ -11,8 +11,14 @@ echo Hello
 
 read -p "Enter your username please: " name
 
-echo "Hello, $name"
+"Hello, $name"
 sleep 2
-echo "You have been busy I see:"
+givenname () {
+echo "$name,"
+}
+
+
+
+givenname you have been busy I see...
 sleep 2
 last 
