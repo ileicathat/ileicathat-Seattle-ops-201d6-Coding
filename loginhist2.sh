@@ -19,6 +19,7 @@ echo "$name,"
 
 
 
-givenname you have been busy I see...
+"givenname you have been busy I see..."
+
 sleep 2
 last 
