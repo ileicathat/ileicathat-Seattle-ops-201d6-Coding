@@ -24,5 +24,5 @@ echo $name,"you have been busy I see..."
 givenname 
 
 sleep 2
-last
+last $name 
 # end
