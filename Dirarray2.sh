@@ -14,10 +14,10 @@
 # main
 
 Darray=('dir1' 'dir2' 'dir3' 'dir4')
+mkdir ${Darray[0]}
 mkdir ${Darray[1]}
 mkdir ${Darray[2]}
 mkdir ${Darray[3]}
-mkdir ${Darray[4]}
 
 Echo "${Darray[@]}" > dirfile.txt
 
