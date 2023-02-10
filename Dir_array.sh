@@ -21,5 +21,6 @@ mkdir dir4
 
 Echo "${Darray[@]}" > dirfile.txt
 
+cat dirfile.txt
 
 # End
