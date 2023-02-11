@@ -10,9 +10,9 @@
 # References the array variable to create a new .txt file in each directory
 
 # Referenced : https://phoenixnap.com/kb/list-processes-linux
-# Referenced :
-
-# 
+# Referenced : https://www.linode.com/docs/guides/use-the-ps-aux-command-in-linux/
+# Referenced : https://www.hostinger.com/tutorials/vps/how-to-manage-processes-in-linux-using-command-line
+# Referenced : https://www.freecodecamp.org/news/linux-list-processes-how-to-check-running-processes/
 
 # Main
 
