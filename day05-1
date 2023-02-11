@@ -17,22 +17,15 @@
 # Main
 
 
-# ps  Display running processes
-# echo "Here are currently running processes,"
-#echo "Choose a process to stop; type a PID #:"
-#read kill_process
-#echo "You chose:" $kill_process
-
-# While conditional Loop
 
 # set condition
 kcommand="no"
-
+# While conditional Loop
 while [[ $kcommand == "no" ]] # => True
 do 
 
-ps # Display running processes
-echo "Here are currently running processes,"
+ps x # Display previuosly running processes
+echo "Here are previously running processes,be careful what you choose."
 echo "Choose a process to stop; type a PID #:"
 read kill_process
 echo "You chose:" $kill_process
