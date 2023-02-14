@@ -37,6 +37,7 @@ elif [[$create_it == "yes"]]; then
       
 if -f ${Darray[@]}=='dir5'
 then echo "We're all done!"
+else echo "We need to try again"
 fi 
 
 
