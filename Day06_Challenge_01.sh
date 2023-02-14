@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # Script: Ops 201 Class 06 Ops Challenge
 # Author: Justin R. Dotson
@@ -19,6 +19,7 @@ Darray=('dir1' 'dir2' 'dir3' 'dir4')
 findir=""
 create_it=""
 
+echo "Looking for dir5"
 for findir in “${Darray[@]}”; 
 do if grep -f $dir5 “${findir}” = false; 
 then echo “${findir} 
@@ -28,29 +29,17 @@ done
 echo "dir5 not found, would you like to create it? (yes or no)"
 read create_it
 
-if [[$create_it]] == "no"; then
+if [[ $create_it == "no" ]]; then
 echo "Sorry, need to create it anyway for credit"
         Darray+=('dir5') # add element to END of array
-elif [[$create_it == "yes"]]; then 
+        echo "dir5 created and added to array"
+       
+elif [[ $create_it == "yes" ]]; then 
         Darray+=('dir5') # add element to END of array
+        echo "dir5 created and added to array"
       fi 
+
+echo  “${Darray[@]}”
+
       
-if -f ${Darray[@]}=='dir5'
-then echo "We're all done!"
-else echo "We need to try again"
-fi 
-
-
-cat dirfile.txt
-
-
-if
-
-
-if [[ -z "$string" ]]; then
-echo "String is empty"
-elif [[ -n "$string" ]]; then
-echo "String is not empty"
-else
-echo "This never happens"
-fi
+ echo "We're all done!"
