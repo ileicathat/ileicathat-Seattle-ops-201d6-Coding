@@ -14,17 +14,42 @@
 
 # Main
 
+#init vars
 Darray=('dir1' 'dir2' 'dir3' 'dir4')
-mkdir ${Darray[0]}
-mkdir ${Darray[1]}
-mkdir ${Darray[2]}
-mkdir ${Darray[3]}
+findir=""
+create_it=""
 
-Echo "${Darray[@]}" > dirfile.txt
+for findir in “${Darray[@]}”; 
+do if grep -f $dir5 “${findir}” = false; 
+then echo “${findir} 
+fi
+done
+
+echo "dir5 not found, would you like to create it? (yes or no)"
+read create_it
+
+if [[$create_it]] == "no"; then
+echo "Sorry, need to create it anyway for credit"
+        Darray+=('dir5') # add element to END of array
+elif [[$create_it == "yes"]]; then 
+        Darray+=('dir5') # add element to END of array
+      fi 
+      
+if -f ${Darray[@]}=='dir5'
+then echo "We're all done!"
+fi 
+
 
 cat dirfile.txt
 
-Darray+=('dir5') # add element to END of array
-if -f ${Darray[@]}=='dir5'
-then echo "We're all done!"
+
 if
+
+
+if [[ -z "$string" ]]; then
+echo "String is empty"
+elif [[ -n "$string" ]]; then
+echo "String is not empty"
+else
+echo "This never happens"
+fi
