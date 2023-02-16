@@ -33,13 +33,19 @@ if [[ $create_it == "no" ]]; then
 echo "Sorry, need to create it anyway for credit"
         Darray+=('dir5') # add element to END of array
         echo "dir5 created and added to array"
+        
        
 elif [[ $create_it == "yes" ]]; then 
         Darray+=('dir5') # add element to END of array
         echo "dir5 created and added to array"
       fi 
 
-echo  “${Darray[@]}”
-
-      
- echo "We're all done!"
+###echo  “${Darray[@]}”
+echo ""    # Space
+mkdir ${Darray[4]} #Make dir5
+echo ""    # Space
+ls 
+echo ""     # Space
+echo "You now have a dir5"
+echo ""     # Space
+echo "We're all done!"
