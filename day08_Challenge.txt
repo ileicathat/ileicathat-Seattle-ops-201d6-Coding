@@ -1,0 +1,11 @@
+# Script: Ops 201 Class 08 Ops Challenge
+# Author: Justin R. Dotson
+# Date of latest revision: 02-15-23
+# Purpose: Ops Challenge - Robocopy Automation
+        # Overview
+          Write a script that Auto runs every night at midnight to backup a users files to another hard drive.
+
+
+
+robocopy C:\Users\j.thompson\Desktop\MyProjectFiles E:\JthompsonBkup\MyProjectFiles /E /Dcopy:DAT /R:10 /W:3
+
