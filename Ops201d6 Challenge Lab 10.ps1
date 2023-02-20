@@ -30,7 +30,7 @@ for ($i=0; $i -le 10; $i++) {
 Start-Process "iexplore" -ArgumentList "https://owasp.org/www-project-top-ten/"
 }
 
-
+#Start-Sleep -Milliseconds 250 # might need this if computer is fast to pull up all windows
 
 #Close all Internet Explorer windows.
 
