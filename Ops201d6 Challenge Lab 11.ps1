@@ -34,4 +34,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 # SMBv1
 
-Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force
+Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force # didnt work for me
+
+Enable-WindowsOptionalFeature -Online -FeatureName smb1protocol # this worked
+
+# Used this to prove it worked 
+# Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol # this worked
