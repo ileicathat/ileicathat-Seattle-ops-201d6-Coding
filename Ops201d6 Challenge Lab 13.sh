@@ -28,17 +28,17 @@ echo "Please input a domain name in this format: thisdomain.com"
 read domain
 
 function infogather {
-        type "whois results:" 
+        echo "whois results:" 
         whois $domain
-        type "dig results:" 
+        echo "dig results:" 
         dig $domain
-        type "host results:" 
+        echo "host results:" 
         host $domain
-        type "nslookup results:" 
+        echo "nslookup results:" 
         nslookup $domain
         
 }
 
-infogather
-infogather > searchresults.txt 
-cat searchresults.txt
+
+infogather > "$domain.txt"
+cat "$domain.txt"
