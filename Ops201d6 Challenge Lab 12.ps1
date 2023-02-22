@@ -25,3 +25,5 @@ Function myfunc {
 
 #call Function
 myfunc
+
+Remove-Item $savefile # Remove item
