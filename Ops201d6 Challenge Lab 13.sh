@@ -41,4 +41,4 @@ function infogather {
 
 
 infogather > "$domain.txt"
-cat "$domain.txt"
+nano "$domain.txt"
